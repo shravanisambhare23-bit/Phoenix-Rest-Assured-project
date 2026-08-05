@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-04T22:32:07 IST" name="Default suite" finished-at="2026-08-04T22:32:08 IST" duration-ms="409">
+  <suite started-at="2026-08-05T14:49:11 IST" name="Default suite" finished-at="2026-08-05T14:49:12 IST" duration-ms="987">
     <groups>
     </groups>
-    <test started-at="2026-08-04T22:32:07 IST" name="Default test" finished-at="2026-08-04T22:32:08 IST" duration-ms="409">
+    <test started-at="2026-08-05T14:49:11 IST" name="Default test" finished-at="2026-08-05T14:49:12 IST" duration-ms="987">
       <class name="com.api.tests.LoginAPITest">
-        <test-method signature="loginApiTest()[pri:0, instance:com.api.tests.LoginAPITest@5824a83d]" started-at="2026-08-04T22:32:07 IST" name="loginApiTest" finished-at="2026-08-04T22:32:08 IST" duration-ms="379" status="FAIL">
+        <test-method signature="loginApiTest()[pri:0, instance:com.api.tests.LoginAPITest@5824a83d]" started-at="2026-08-05T14:49:11 IST" name="loginApiTest" finished-at="2026-08-05T14:49:12 IST" duration-ms="923" status="FAIL">
           <exception class="java.lang.ExceptionInInitializerError">
             <full-stacktrace>
               <![CDATA[java.lang.ExceptionInInitializerError
-at com.api.tests.LoginAPITest.loginApiTest(LoginAPITest.java:19)
+at com.api.tests.LoginAPITest.loginApiTest(LoginAPITest.java:21)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

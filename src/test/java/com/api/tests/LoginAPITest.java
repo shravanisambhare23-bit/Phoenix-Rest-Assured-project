@@ -7,6 +7,8 @@ import java.io.IOException;
 import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 import com.api.utils.ConfigManager;
+import com.api.utils.ConfigManagerOld;
+
 import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
 
