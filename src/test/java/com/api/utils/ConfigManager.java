@@ -19,21 +19,11 @@ public class ConfigManager {
 		 env = System.getProperty("env");
 		 
 		 switch (env) {
-		 case "dev" :{
-			 path = "Config/config.dev.properties";
-			 break;
-		 }
-		 case "qa" :{
-			 path = "Config/config.qa.properties";
-			 break;
-		 }
-		 case "uat": {
-			 path = "Config/config.uat.properties";
-			 break;
-		 }
-		 default : path = "Config/config.qa.properties";
-			 
-		 }
+		 case "dev" -> path = "Config/config.dev.properties";
+		 case "qa" -> path = "Config/config.qa.properties";
+		 case "uat" -> path = "Config/config.uat.properties";
+		default ->  path = "Config/config.qa.properties";	 
+		 }                      
 		InputStream input = Thread.currentThread().getContextClassLoader().getResourceAsStream(path);
 		if(input == null) {
 			throw new RuntimeException("Cannot find the File at the path" + path);

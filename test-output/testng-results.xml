@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-05T14:49:11 IST" name="Default suite" finished-at="2026-08-05T14:49:12 IST" duration-ms="987">
+  <suite started-at="2026-08-20T23:11:26 IST" name="Default suite" finished-at="2026-08-20T23:11:28 IST" duration-ms="1329">
     <groups>
     </groups>
-    <test started-at="2026-08-05T14:49:11 IST" name="Default test" finished-at="2026-08-05T14:49:12 IST" duration-ms="987">
-      <class name="com.api.tests.LoginAPITest">
-        <test-method signature="loginApiTest()[pri:0, instance:com.api.tests.LoginAPITest@5824a83d]" started-at="2026-08-05T14:49:11 IST" name="loginApiTest" finished-at="2026-08-05T14:49:12 IST" duration-ms="923" status="FAIL">
+    <test started-at="2026-08-20T23:11:26 IST" name="Default test" finished-at="2026-08-20T23:11:28 IST" duration-ms="1329">
+      <class name="com.api.tests.userDetailsAPIRequest">
+        <test-method signature="userdetails()[pri:0, instance:com.api.tests.userDetailsAPIRequest@5824a83d]" started-at="2026-08-20T23:11:26 IST" name="userdetails" finished-at="2026-08-20T23:11:27 IST" duration-ms="1238" status="FAIL">
           <exception class="java.lang.ExceptionInInitializerError">
             <full-stacktrace>
               <![CDATA[java.lang.ExceptionInInitializerError
-at com.api.tests.LoginAPITest.loginApiTest(LoginAPITest.java:21)
+at com.api.tests.userDetailsAPIRequest.userdetails(userDetailsAPIRequest.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -48,8 +48,8 @@ at com.api.utils.ConfigManager.<clinit>(ConfigManager.java:21)
           </exception> <!-- java.lang.ExceptionInInitializerError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginApiTest -->
-      </class> <!-- com.api.tests.LoginAPITest -->
+        </test-method> <!-- userdetails -->
+      </class> <!-- com.api.tests.userDetailsAPIRequest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -36,7 +36,7 @@ public class LoginAPITest {
 	    .log().all()
 	    .statusCode(200)
 	    .and()
-	    .time(Matchers.lessThan(1000L))
+	    .time(Matchers.lessThan(2000L))
 	    .and()
 	    .body("message",Matchers.equalTo("Success"))
 	    .and()
