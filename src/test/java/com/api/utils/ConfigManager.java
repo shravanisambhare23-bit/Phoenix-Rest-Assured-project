@@ -17,7 +17,9 @@ public class ConfigManager {
 	static {
 		
 		 env = System.getProperty("env");
-		 
+		 if (env == null) {
+			    env = "qa";
+			}
 		 switch (env) {
 		 case "dev" -> path = "Config/config.dev.properties";
 		 case "qa" -> path = "Config/config.qa.properties";
@@ -39,8 +41,7 @@ public class ConfigManager {
 		 catch (IOException e) {
 			
 			e.printStackTrace();
-		}
-		
+		}	
 	}
 	public static String getProperty(String key){
 		
