@@ -1,5 +1,6 @@
 package com.api.tests;
 
+import static io.restassured.RestAssured.given;
 import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 import com.api.constants.Role;
@@ -8,9 +9,7 @@ import com.api.utils.ConfigManager;
 
 import io.restassured.module.jsv.JsonSchemaValidator;
 
-import static io.restassured.RestAssured.*;
-
-public class MatetAPITest {
+public class MasterAPITest {
 @Test
 
 	public  void MasterApiTest() {
@@ -39,8 +38,6 @@ given()
 .body("data.mst_oem.id", Matchers.everyItem(Matchers.notNullValue()))
 .body("data.mst_oem.name", Matchers.everyItem(Matchers.notNullValue()))
 .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("Schema/MasterAPISchema-FD.json"));
-
-
 	}
 
 public void InvalidTokenMasterAPITest() {

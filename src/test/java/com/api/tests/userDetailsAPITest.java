@@ -29,10 +29,6 @@ public class userDetailsAPITest {
 	 .log().all()
 	 .statusCode(200)
 	 .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("Schema/userDetailsSchema.json"))
-	 .time(Matchers.lessThan(1500L));
-	 
-	 
-	
-	 
+	 .time(Matchers.lessThan(1500L));	 
 	}
 }
