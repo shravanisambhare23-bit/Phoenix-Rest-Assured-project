@@ -2,30 +2,34 @@ name: Phoenix Test Automation Workflow
 
 on:
   push:
-    branches: [ "master" ]
+    branches:
+      - master
   pull_request:
-    branches: [ "master" ]
+    branches:
+      - master
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v5
-    - name: Set up JDK 17
-      uses: actions/setup-java@v5
-      with:
-        java-version: '17'
-        distribution: 'temurin'
-        cache: maven
-    - name: Execute test Automation Framework
-      run: mvn clean test -DsuiteXmlFile=testng.xml -Denv=qa
-      
-    - name: Upload a Build Artifact
-     if: always()
-  uses: actions/upload-artifact@v7.0.1
-  with:
-    name: Surefire Report
-    path: target/sureFire-reports/
-    retention-days: 10
-   
+      - name: Checkout Repository
+        uses: actions/checkout@v5
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v5
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Execute Test Automation Framework
+        run: mvn clean test -DsuiteXmlFile=testng.xml -Denv=qa
+
+      - name: Upload Surefire Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Surefire-Reports
+          path: target/surefire-reports/
+          retention-days: 10
