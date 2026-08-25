@@ -43,7 +43,7 @@ jobs:
 
       - name: Upload Surefire Reports
         if: always()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v4
         with:
           name: Surefire-Reports
           path: target/surefire-reports/
